@@ -8,8 +8,7 @@ from code.EntityFactory import EntityFactory
 
 
 class Level:
-    def __init__(self, window: Surface, name: str, menu_return: str, player_score: list[int]):
-        self.timeout = TIMEOUT_LEVEL
+    def __init__(self, window: Surface, name: str, menu_return: list[int]):
         self.window = window
         self.name = name
         self.entity_list: list[Entity] = []
