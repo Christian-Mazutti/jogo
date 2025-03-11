@@ -1,8 +1,8 @@
 import pygame
 
-from code.Const import WIN_HEIGHT, WIN_WIDTH
+from code.Const import WIN_HEIGHT, WIN_WIDTH, MENU_OPTION
+from code.Level import Level
 from code.Menu import Menu
-
 
 class Game:
     def __init__(self):
@@ -12,7 +12,22 @@ class Game:
     def run(self):
         while True:
             menu = Menu(self.window)
-            menu.run()
-            pass
+            menu_return = menu.run()
+
+            if menu_return in [MENU_OPTION[0]:
+                player_score = [0, 0]  # [Player1, Player2]
+                level = Level(self.window, 'Level1',menu_return)
+            elif menu_return == MENU_OPTION[1]:
+                score.show()
+            elif menu_return == MENU_OPTION[2]:
+                pygame.quit()  # Close Window
+                quit()  # end pygame
+            else:
+                pygame.quit()
+                sys.exit()
+
+            else:
+                pass
+
 
 
